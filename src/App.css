@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Main Page */
+.page {
+  min-height: 100vh;
+  text-align: center;
+  padding: 40px 20px;
+  transition: 0.4s ease;
+}
+
+/* Light Theme */
+.page.light {
+  background: linear-gradient(135deg, #eef2ff, #f0fdfa);
+  color: #1e293b;
+}
+
+/* Dark Theme */
+.page.dark {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #f8fafc;
+}
+
+/* Theme Button */
+.theme-toggle {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 750px;
+  margin: 0 auto 20px;
+}
+
+.theme-btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 20px;
+  background: #4f46e5;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.theme-btn:hover {
+  background: #3730a3;
+  transform: scale(1.05);
+}
+
+/* Heading */
+.main-heading {
+  color: #4f46e5;
+  margin-bottom: 8px;
+  font-size: 32px;
+}
+
+.dark .main-heading {
+  color: #a78bfa;
+}
+
+.subtitle {
+  color: #64748b;
+  margin-bottom: 35px;
+}
+
+.dark .subtitle {
+  color: #cbd5e1;
+}
+
+/* Container */
+.container {
+  max-width: 750px;
+  margin: auto;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+/* Sections */
+.section {
+  width: 50%;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.4s ease;
+}
+
+.dark .section {
+  background: #1e293b;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Context Section */
+.context-section {
+  border-top: 5px solid #8b5cf6;
+}
+
+/* Redux Section */
+.redux-section {
+  border-top: 5px solid #06b6d4;
+}
+
+/* Headings */
+h2 {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+h3 {
+  color: #334155;
+  margin: 20px 0;
+}
+
+.dark h3 {
+  color: #e2e8f0;
+}
+
+/* Buttons */
+button {
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Login Button */
+.login-btn {
+  padding: 11px 25px;
+  background: #8b5cf6;
+}
+
+.login-btn:hover {
+  background: #7c3aed;
+}
+
+/* Counter Buttons */
+.counter-btn {
+  width: 50px;
+  height: 45px;
+  margin: 5px;
+  background: #06b6d4;
+  font-size: 22px;
+}
+
+.counter-btn:hover {
+  background: #0891b2;
+}
+
+/* Responsive Design */
+@media (max-width: 650px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section {
+    width: 100%;
+  }
+
+  .theme-toggle {
+    justify-content: center;
+  }
+}
